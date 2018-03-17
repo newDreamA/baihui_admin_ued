@@ -42,6 +42,7 @@ export default class Product{
     // 获取商品信息
     saveProduct(product){
         return _mm.request({
+            method  : 'POST',
             url     : _mm.getServerUrl('/manage/product/save.do'),
             data    : product
         });
